@@ -7,7 +7,7 @@ setup(
     version='0.0.1a1',
     packages=find_packages(),
     description='CLI tools for working with CloudMan clusters',
-    url='https://github.com/simonalpha/cm-tools',
+    url='https://github.com/simonalpha/cm_tools',
     author='Simon Belluzzo',
     author_email='simon@belluzzo.id.au',
     install_requires=['boto<2.35.0', 'bioblend', 'docopt'],

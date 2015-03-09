@@ -39,10 +39,10 @@ def process_args(config, cli_args):
 # make keys consistent, then update, starting at lowest priority to highest
 
 def process_env(config):
-    access_key = os.environ.get('AWS_ACCESS_KEY', None) or os.environ.get('EC2_ACCESS_KEY', None)
+    access_key = os.environ.get('AWS_ACCESS_KEY_ID', None) or os.environ.get('EC2_ACCESS_KEY', None)
     if access_key:
         config['access_key'] = access_key
-    secret_key = os.environ.get('AWS_SECRET_KEY', None) or os.environ.get('EC2_SECRET_KEY', None)
+    secret_key = os.environ.get('AWS_SECRET_ACCESS_KEY', None) or os.environ.get('EC2_SECRET_KEY', None)
     if secret_key:
         config['secret_key'] = secret_key
     password = os.environ.get('CM_PASSWORD', None)

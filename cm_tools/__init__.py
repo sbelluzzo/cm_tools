@@ -115,7 +115,7 @@ def cm_launch(cloud, config):
     # launch instance
     #instance = CloudManInstance.launch_instance(cm_cfg)
     instance = launch_master(cm_cfg, default_bucket_url=config['default_bucket_url'])
-    print("Starting cluster: {1}. Please wait.".format(config['cluster_name']))
+    print("Starting cluster: {0}. Please wait.".format(cm_cfg.cluster_name))
     state = instance.get_machine_status()
     while state['instance_state'] not in {'running', 'error'}:
         sleep(10)

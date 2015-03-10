@@ -18,6 +18,7 @@ Options:
 """
 
 DEFAULT_CLUSTER_NAME = "cls-"
+DEFAULT_INSTANCE_TYPE = 'm1.medium'
 
 import string, os, sys
 from time import sleep
@@ -83,7 +84,7 @@ def create_cloudman_config(cloud_config, config):
                          secret_key=config['secret_key'],
                          cluster_name=config['cluster_name'] or DEFAULT_CLUSTER_NAME + mkpasswd(5),
                          image_id=config['image_id'],
-                         instance_type=config['instance_type'],
+                         instance_type=config['instance_type'] or DEFAULT_INSTANCE_TYPE,
                          password=config['password'] or mkpasswd(),
                          placement=config['zone'],
                          key_name=config['key_name'],

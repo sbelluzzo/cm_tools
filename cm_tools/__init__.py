@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-Cloudman CLI Launcher
+Cloudman CLI Launcher v0.0.1
 
 Usage: cm-launcher [options]
 

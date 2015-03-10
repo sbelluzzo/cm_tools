@@ -4,7 +4,7 @@ from os import path
 
 setup(
     name='cm_tools',
-    version='0.0.1a1',
+    version='0.0.1',
     packages=find_packages(),
     description='CLI tools for working with CloudMan clusters',
     url='https://github.com/simonalpha/cm_tools',

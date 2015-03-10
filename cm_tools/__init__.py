@@ -2,7 +2,7 @@
 """
 Cloudman CLI Launcher
 
-Usage: cloudman-launcher.py [options]
+Usage: cm-launcher [options]
 
 Options:
     --access_key=key
